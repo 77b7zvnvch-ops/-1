@@ -15,3 +15,5 @@ Three.js 通过 jsDelivr 加载，项目地址：https://github.com/mrdoob/three
 
 ## 发布
 推送到 main 后由 GitHub Actions 发布 GitHub Pages。若首次发布未启动，请到 Settings → Pages → Build and deployment 选择 GitHub Actions。
+
+部署检查触发于 2026-10-30。
