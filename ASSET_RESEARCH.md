@@ -1,49 +1,60 @@
-# Asset research and production plan
+# 免费素材清单与制作方案
 
-Updated: 2026-10-30
+更新：2026-10-30
 
-## Visual target
-A hand-drawn Japanese anime 3D alley, third-person rear camera, narrow lived-in street, dense older shopfronts, stairs, railings, overhead utility wires, signs, crates and an NPC. The target is not a generic low-poly town.
+原则：本项目只使用免费可下载资源，不购买任何素材。优先选择 CC0；其他许可逐项检查。网页练习用 GLB/glTF，保留作者和许可证说明。免费不代表可以把原始模型单独转售或重新分发。
 
-## Candidate environment assets
+## 免费环境素材
 
-- **Japan modular neighbourhood pack** — https://3d-asset.com/packs/japan/
-  - 93 GLB/R3F assets, 2K PBR, modular Japanese houses/shops, utility poles, fences, vending machines, stairs, bicycles and props.
-  - Royalty-free commercial license stated by seller; $39.
-  - Strongest current candidate for architecture/layout and dense street dressing. Still needs a stylized material/lighting pass to approach the hand-painted reference.
+- **Japanese School and City Street** — https://3dassets.dev/packs/japanese-school-and-city-street
+  - CC0 1.0；46 个模型，GLB，约 7.6 MB，含学校建筑和外侧商店街、滑门、卷帘门、自行车、樱花树等。
+  - 适合做街区结构和建筑模块；需补充窄巷细节，风格仍偏简化。
 
 - **Izakaya Alley and Ramen Shop** — https://3dassets.dev/packs/izakaya-alley-and-ramen-shop
-  - 64 modular GLB models, CC0 1.0, 4.4 MB total, 71,060 triangles. Includes alley floor, shopfronts, lanterns, vending machines, crates, kegs, bins and services.
-  - Useful as a secondary source for alley-specific details. Geometry is AI-generated and should be visually reviewed before shipping.
+  - CC0 1.0；64 个模块化 GLB，约 4.4 MB。含小巷地面、店铺立面、灯笼、售货机、木箱、酒桶和垃圾桶等。
+  - 适合补足小巷道具；模型需逐个检查实际视觉质量。
 
-- **Showa Retro Shotengai kit** — https://geneshokai.itch.io/showa-retro-shotengai-low-poly-3d-kit
-  - $5; 34 GLBs plus editable Blender source and two pre-arranged street scenes. Utility poles/wires, shop curtains, awnings, roofs, signs, bicycle, boxes and other props.
-  - Useful for composition and street dressing, but low-poly and vertex-colour based; not a final visual match without reworking.
+- **Low Poly Izakaya Alley Pack** — https://reodesuxz.itch.io/low-poly-izakaya-alley-pack
+  - 免费（Name your own price）；24 个模型，GLB/FBX/OBJ/Blend。个人及商业项目可用，无需署名；禁止转售或重新分发原始文件。
+  - 低多边形，只作为布局/道具练习素材，不直接作为最终美术风格。
 
-- **Japanese Street Props** — https://ishiharaworks.itch.io/japanese-street-props
-  - $17; GLB/FBX/Blend. Utility pole/transformer, mailbox, guardrail, road signs, vending machine, bins, bicycle rack, streetlight and bus stop.
-  - Optional detail pack; not required if equivalent props are available in the Japan neighbourhood pack.
+- **Low Poly Sushi & Japan Street Pack** — https://reodesuxz.itch.io/low-poly-sushi-japan-street-pack
+  - 免费（Name your own price）；29 个模型，GLB/FBX/OBJ/Blend。含纸灯笼、售货机、路灯、自行车、拉面摊、电线杆等。
+  - 个人及商业项目可用，无需署名；禁止转售或重新分发原始文件。
 
-## Candidate character sources
-
-- **Stylized Anime Girl Character (Fab)** — https://www.fab.com/listings/a8bb6ae3-e9b1-40ae-acf2-baf65e00c79f
-  - Advertises GLB/FBX/Blend, rigging, and idle/walk/run/jump/sit/talk animations. Price and license must be checked at checkout; seller marks AI-generated.
-  - Candidate only; must inspect the actual model silhouette, clothing and face before choosing.
+## 免费人物与动作素材
 
 - **Grab3D Character Mixer** — https://grab3d.com/tools/character-mixer/
-  - Browser-based, free, CC0, rigged GLB/VRM export. 198 modular parts and built-in motions.
-  - Fast fallback for a temporary NPC/player rig; its available styles may not match the requested anime design.
+  - 免费 CC0；浏览器里组合人物并导出 rigged GLB/VRM，包含 idle、walk、run、wave、jump。
+  - 适合先验证人物骨骼、动作和网页加载；外观可能需要调整才能接近目标女主角。
 
-- **Cinevva animation library** — https://app.cinevva.com/tools/animations
-  - Advertises 260 CC0 motions and GLB export on paid plans. Check export entitlement before relying on it.
+- **3D Character Rigged（女性角色）** — https://theunseenvulga.itch.io/3d-character-riggedema
+  - 免费下载，CC0；GLTF/FBX/OBJ，手绘贴图，中高面数，支持后续 Mixamo 动画。
+  - 下载后需检查实际角色造型、贴图和骨骼是否适合目标。
 
-## Production decisions
-1. Do not reuse the existing primitive-box scene as the final environment.
-2. Build a coherent narrow street from modular shopfronts and props; prioritize correct camera composition, scale, dense facade detail and overhead wires.
-3. Create a unified hand-painted/toon material treatment: restrained palette, painted roughness, warm bounce light, soft shadows, subtle outlines and atmospheric depth.
-4. Player must read from behind: short black hair, dark dress, white backpack. NPC should be placed by a shopfront with a small everyday action.
-5. Keep movement, third-person camera, mouse look and mobile touch controls.
-6. Optimize GLB assets and texture sizes for browser loading; use lazy loading only where it does not create visible pop-in.
+- **3D Rigged Character（男性角色）** — https://theunseenvulga.itch.io/3d-charater-riggeddiesel
+  - 免费下载，CC0；GLTF/FBX/OBJ，手绘贴图，可用于 NPC/骨骼流程测试。
+  - 不作为女主角最终模型。
 
-## Purchase gate
-No paid asset has been purchased. The $39 Japan neighbourhood pack is the strongest environment candidate; confirm its actual preview and license details before purchase. The $5 Showa kit is an optional supplementary source, not a substitute for the target art direction.
+- **Gobkit Free Character Pack Vol.1** — https://gobkit.itch.io/gobkit-free-character-pack-vol-1
+  - 免费 CC0；8 个带骨骼角色，GLB，包含 Idle/Walk/Run 等动作。
+  - 风格偏低模，适合测试动画管线，不直接作为目标角色。
+
+- **Gobkit 免费资源** — https://gobkit.com/freebies
+  - CC0；GLB 格式，包含带动画角色和自然道具，可直接用于 Three.js 测试。
+  - 风格偏低模，主要用于学习网页端模型加载和动画。
+
+## 风格目标与实现
+
+目标仍是日系手绘动漫 3D，而不是低多边形小镇。免费模型只作为可修改的基础素材：
+1. 先搭出狭窄巷道的正确构图：密集旧式店面、楼梯、护栏、电线和杂物。
+2. 统一材质与色调：手绘感贴图、柔和赛璐璐明暗、轻微描边、暖色反弹光和空气透视。
+3. 主角从背后可辨识：黑色短发、深色连衣裙、白色双肩包；补充走路循环。
+4. 店铺旁安排整理物品的 NPC。
+5. 保留第三人称跟随镜头、鼠标环视、键盘移动和移动端触控。
+6. 压缩 GLB 与贴图，确保浏览器加载流畅。
+
+## 许可注意
+- CC0 资源可自由修改使用；仍建议把来源和许可证文件随项目保留。
+- itch.io 的“免费/Name your own price”不自动等于 CC0；按每个素材页列明的许可执行。
+- 不购买付费包；不把禁止重新分发的原始模型打包公开。
